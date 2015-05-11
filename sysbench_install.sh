@@ -1,6 +1,6 @@
 #!/bin/bash
 
-yum -y install bzr libtool make automake autoconf gcc gcc-c++
+yum -y install bzr libtool make automake autoconf gcc gcc-c++ libaio libaio-devel
 rm -rf /tmp/sysbench
 bzr branch lp:sysbench /tmp/sysbench
 curr_pwd=$(pwd)
